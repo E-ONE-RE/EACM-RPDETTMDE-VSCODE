@@ -2,7 +2,7 @@ sap.ui.define([
     "sap/ui/core/mvc/ControllerExtension",
     "sap/m/MessageBox",
     "eacm/rpdettmde/ext/controller/PrintPdfHelper",
-    "eacm/rpdettmed/ext/controller/SendMailHelper"
+    "eacm/rpdettmde/ext/controller/SendMailHelper"
 ], function (ControllerExtension, MessageBox, PrintPdfHelper, SendMailHelper) {
     "use strict";
 

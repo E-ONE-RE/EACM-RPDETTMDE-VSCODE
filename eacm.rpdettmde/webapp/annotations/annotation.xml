@@ -299,33 +299,6 @@
                     </Record>
                 </Annotation>
             </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Bukrs">
-                <Annotation Term="Common.Label" String="{@i18n>label_bukrs}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Fkdat">
-                <Annotation Term="Common.Label" String="{@i18n>label_fkdat}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Vkorg">
-                <Annotation Term="Common.Label" String="{@i18n>label_vkorg}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Zclpr">
-                <Annotation Term="Common.Label" String="{@i18n>label_zclpr}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Zcdaz">
-                <Annotation Term="Common.Label" String="{@i18n>label_zcdaz}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Vbeln">
-                <Annotation Term="Common.Label" String="{@i18n>label_vbeln}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Kunrg">
-                <Annotation Term="Common.Label" String="{@i18n>label_kunrg}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Zutmx">
-                <Annotation Term="Common.Label" String="{@i18n>label_zutmx}"/>
-            </Annotations>
-            <Annotations Target="SAP__self.CommissionDetailType/Budat">
-                <Annotation Term="Common.Label" String="{@i18n>label_budat}"/>
-            </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
