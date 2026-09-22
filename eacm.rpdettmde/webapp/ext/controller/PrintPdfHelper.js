@@ -173,9 +173,9 @@ sap.ui.define([
         if (!aFilters.length) {
             var sLanguage = sap.ui.getCore().getConfiguration().getLanguage().split("-")[0];
             if (sLanguage === "it") {
-               throw new Error("Non è possibile eseguire la stampa senza aver indicato alcun filtro"); // i18n>errorNoFilterSend
+               throw new Error("Non è possibile eseguire la stampa senza aver indicato alcun filtro"); // i18n>errorNoFilterPrint
             } else {
-                throw new Error("It''s not possible to print PDF without having defined any filter"); // i18n>errorNoFilterSend
+                throw new Error("It''s not possible to print PDF without having defined any filter"); // i18n>errorNoFilterPrint
             }
         }
 
