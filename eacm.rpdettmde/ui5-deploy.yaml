@@ -20,7 +20,7 @@ builder:
           name: /EACM/RPDETTMDE
           description: Report provvigioni Maturande
           package: /EACM/RPDETTMDE
-          transport: DVLK900066
+          transport: DVLK900271
         exclude:
           - /test/
           - /localService/

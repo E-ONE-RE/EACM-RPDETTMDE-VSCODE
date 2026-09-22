@@ -1,8 +1,9 @@
 sap.ui.define([
     "sap/ui/core/mvc/ControllerExtension",
     "sap/m/MessageBox",
-    "eacm/rpdettmde/ext/controller/PrintPdfHelper"
-], function (ControllerExtension, MessageBox, PrintPdfHelper) {
+    "eacm/rpdettmde/ext/controller/PrintPdfHelper",
+    "eacm/rpdettmed/ext/controller/SendMailHelper"
+], function (ControllerExtension, MessageBox, PrintPdfHelper, SendMailHelper) {
     "use strict";
 
     return ControllerExtension.extend("eacm.rpdettmde.ext.controller.ListReportExt", {
@@ -15,8 +16,19 @@ sap.ui.define([
                 MessageBox.error(
                     oError && oError.message
                         ? oError.message
-                        : "Errore durante la stampa PDF."
-                );
+                        : "{i18n>errorPdfPrint}"
+                ); // Errore durante la stampa PDF.
+            }
+        },
+        sendMail: async function() {
+            try {
+                await SendMailHelper.runReportMailSending(this.base.getExtensionAPI());
+            } catch (oError) {
+                MessageBox.error(
+                    oError && oError.message
+                        ? oError.message
+                        : "{i18n>errorSendMail}"
+                ); // Errore durante l'invio mail.
             }
         }
     });
